@@ -1,0 +1,56 @@
+name: Wrong result
+description: A tool gave a result you believe is incorrect.
+title: "Wrong result: "
+labels: ["wrong-result", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting this. **This page is public.**
+        Please use a small made-up example, never real personal data, passwords, tokens or keys.
+  - type: input
+    id: tool
+    attributes:
+      label: Tool
+      placeholder: e.g. Base64
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page address
+      placeholder: https://mtools.co/tools/...
+  - type: textarea
+    id: example
+    attributes:
+      label: Input and settings
+      description: A small made-up example that shows the problem, and any settings you changed.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Result you got
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Result you expected
+      description: If you can, say where it comes from (a standard, another tool or a library).
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: e.g. Firefox 144 on Windows 11
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before you submit
+      options:
+        - label: My example contains no real personal data, passwords, tokens or keys.
+          required: true
