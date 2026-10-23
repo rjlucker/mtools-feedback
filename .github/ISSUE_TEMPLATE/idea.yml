@@ -1,0 +1,17 @@
+name: Idea
+description: Suggest an improvement to a tool, or a new tool.
+title: "Idea: "
+labels: ["idea", "triage"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What would you like mtools to do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it would help
+      description: The task you were trying to do, and how you do it today.
