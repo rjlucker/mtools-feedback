@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security problem privately
+    url: https://github.com/rjlucker/mtools-feedback/security/advisories/new
+    about: Please don't open a public issue for a security problem.
+  - name: No GitHub account, or a private question
+    url: https://mtools.co/contact/
+    about: Email for feedback, privacy questions, accessibility needs or sponsorship.
