@@ -1,0 +1,41 @@
+name: Something isn't working
+description: A page or control doesn't work, looks broken or is hard to use.
+title: "Bug: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting this. **This page is public**, so please don't include real personal data, passwords, tokens or keys.
+  - type: input
+    id: page
+    attributes:
+      label: Page address
+      placeholder: https://mtools.co/...
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: e.g. Safari 26 on iPhone
+    validations:
+      required: true
+  - type: dropdown
+    id: assistive
+    attributes:
+      label: Were you using any of these?
+      multiple: true
+      options:
+        - Keyboard only
+        - Screen reader
+        - Zoom or large text
+        - Voice control
+        - None of these
